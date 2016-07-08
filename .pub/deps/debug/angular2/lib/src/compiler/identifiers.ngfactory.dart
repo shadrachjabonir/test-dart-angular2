@@ -1,0 +1,55 @@
+library angular2.src.compiler.identifiers.ngfactory.dart;
+
+import 'identifiers.dart';
+import 'package:angular2/src/core/reflection/reflection.dart' as _ngRef;
+import 'compile_metadata.dart' show CompileIdentifierMetadata, CompileTokenMetadata;
+import 'package:angular2/src/core/linker/view.dart' show AppView;
+import 'package:angular2/src/core/linker/debug_context.dart' show StaticNodeDebugInfo, DebugContext;
+import 'package:angular2/src/core/linker/view_utils.dart' show ViewUtils, flattenNestedViewRenderNodes, interpolate, checkBinding, castByValue, pureProxy1, pureProxy2, pureProxy3, pureProxy4, pureProxy5, pureProxy6, pureProxy7, pureProxy8, pureProxy9, pureProxy10;
+import 'package:angular2/src/core/change_detection/change_detection.dart' show uninitialized, devModeEqual, SimpleChange, ValueUnwrapper, ChangeDetectorRef, ChangeDetectorState, ChangeDetectionStrategy;
+import 'package:angular2/src/core/linker/element.dart' show AppElement;
+import 'package:angular2/src/core/linker/element_ref.dart' show ElementRef;
+import 'package:angular2/src/core/linker/view_container_ref.dart' show ViewContainerRef;
+import 'package:angular2/src/core/render/api.dart' show Renderer, RenderComponentType, RenderDebugInfo;
+import 'package:angular2/src/core/metadata/view.dart' show ViewEncapsulation;
+import 'package:angular2/src/core/linker/view_type.dart' show ViewType;
+import 'package:angular2/src/core/linker.dart' show QueryList;
+import 'package:angular2/src/core/di/injector.dart' show Injector;
+import 'package:angular2/src/core/linker/template_ref.dart' show TemplateRef, TemplateRef_;
+import 'util.dart' show MODULE_SUFFIX;
+import 'compile_metadata.ngfactory.dart' as i0;
+import 'package:angular2/src/core/linker/view.ngfactory.dart' as i1;
+import 'package:angular2/src/core/linker/debug_context.ngfactory.dart' as i2;
+import 'package:angular2/src/core/linker/view_utils.ngfactory.dart' as i3;
+import 'package:angular2/src/core/change_detection/change_detection.ngfactory.dart' as i4;
+import 'package:angular2/src/core/linker/element.ngfactory.dart' as i5;
+import 'package:angular2/src/core/linker/element_ref.ngfactory.dart' as i6;
+import 'package:angular2/src/core/linker/view_container_ref.ngfactory.dart' as i7;
+import 'package:angular2/src/core/render/api.ngfactory.dart' as i8;
+import 'package:angular2/src/core/metadata/view.ngfactory.dart' as i9;
+import 'package:angular2/src/core/linker/view_type.ngfactory.dart' as i10;
+import 'package:angular2/src/core/linker.ngfactory.dart' as i11;
+import 'package:angular2/src/core/di/injector.ngfactory.dart' as i12;
+import 'package:angular2/src/core/linker/template_ref.ngfactory.dart' as i13;
+import 'util.ngfactory.dart' as i14;
+export 'identifiers.dart';
+
+var _visited = false;
+void initReflector() {
+if (_visited) return; _visited = true;
+i0.initReflector();
+i1.initReflector();
+i2.initReflector();
+i3.initReflector();
+i4.initReflector();
+i5.initReflector();
+i6.initReflector();
+i7.initReflector();
+i8.initReflector();
+i9.initReflector();
+i10.initReflector();
+i11.initReflector();
+i12.initReflector();
+i13.initReflector();
+i14.initReflector();
+}

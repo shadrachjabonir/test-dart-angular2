@@ -1,0 +1,52 @@
+library angular2.src.compiler.view_compiler.property_binder.ngfactory.dart;
+
+import 'property_binder.dart';
+import 'package:angular2/src/core/reflection/reflection.dart' as _ngRef;
+import '../expression_parser/ast.dart' as cdAst;
+import '../output/output_ast.dart' as o;
+import '../identifiers.dart' show Identifiers;
+import 'constants.dart' show DetectChangesVars;
+import '../template_ast.dart' show BoundTextAst, BoundElementPropertyAst, DirectiveAst, PropertyBindingType, TemplateAst;
+import 'package:angular2/src/facade/lang.dart' show isBlank, isPresent, isArray;
+import 'compile_view.dart' show CompileView;
+import 'compile_element.dart' show CompileElement, CompileNode;
+import 'compile_method.dart' show CompileMethod;
+import 'package:angular2/src/core/metadata/lifecycle_hooks.dart' show LifecycleHooks;
+import 'package:angular2/src/core/change_detection/constants.dart' show isDefaultChangeDetectionStrategy;
+import '../util.dart' show camelCaseToDashCase;
+import 'expression_converter.dart' show convertCdExpressionToIr;
+import 'compile_binding.dart' show CompileBinding;
+import '../expression_parser/ast.ngfactory.dart' as i0;
+import '../output/output_ast.ngfactory.dart' as i1;
+import '../identifiers.ngfactory.dart' as i2;
+import 'constants.ngfactory.dart' as i3;
+import '../template_ast.ngfactory.dart' as i4;
+import 'package:angular2/src/facade/lang.ngfactory.dart' as i5;
+import 'compile_view.ngfactory.dart' as i6;
+import 'compile_element.ngfactory.dart' as i7;
+import 'compile_method.ngfactory.dart' as i8;
+import 'package:angular2/src/core/metadata/lifecycle_hooks.ngfactory.dart' as i9;
+import 'package:angular2/src/core/change_detection/constants.ngfactory.dart' as i10;
+import '../util.ngfactory.dart' as i11;
+import 'expression_converter.ngfactory.dart' as i12;
+import 'compile_binding.ngfactory.dart' as i13;
+export 'property_binder.dart';
+
+var _visited = false;
+void initReflector() {
+if (_visited) return; _visited = true;
+i0.initReflector();
+i1.initReflector();
+i2.initReflector();
+i3.initReflector();
+i4.initReflector();
+i5.initReflector();
+i6.initReflector();
+i7.initReflector();
+i8.initReflector();
+i9.initReflector();
+i10.initReflector();
+i11.initReflector();
+i12.initReflector();
+i13.initReflector();
+}
